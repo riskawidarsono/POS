@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pos/utils/color.dart';
 import 'package:pos/utils/font.dart';
-import 'package:pos/widgets/buttom.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -56,7 +55,7 @@ class WelcomePage extends StatelessWidget {
                     height: 100,
                   ),
                   Container(
-                    child: contenWelcome(),
+                    child: ContenWelcome(),
                   ),
                   SizedBox(
                     height: 200,
@@ -99,8 +98,8 @@ class WelcomePage extends StatelessWidget {
   }
 }
 
-class contenWelcome extends StatelessWidget {
-  const contenWelcome({
+class ContenWelcome extends StatelessWidget {
+  const ContenWelcome({
     Key? key,
   }) : super(key: key);
 

@@ -37,6 +37,12 @@ class AppBarMain extends StatelessWidget implements PreferredSizeWidget {
           style: h4.copyWith(color: baseWhite),
         ),
       ),
+      actions: <Widget>[
+        Container(
+          width: 88,
+          color: Colors.amber,
+        ),
+      ],
     );
   }
 }
