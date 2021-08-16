@@ -15,18 +15,67 @@ class ForgotPassword extends StatelessWidget {
           titleBar: 'Lupa Password',
         ),
         body: Container(
-          child: Container(
-            padding: EdgeInsets.only(
-              top: 40,
-              left: 24,
-              right: 24,
-            ),
-            child: AutoSizeText(
-              'Silahkan masukkan alamat surel anda untuk mereset kata sandi. Tautan konfirmasi akan dikirimkan ke alamat surel anda.',
-              style: subh6.copyWith(
-                color: bodySecondaryNormal,
+          margin: EdgeInsets.symmetric(
+            horizontal: 24,
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(
+                  top: 40,
+                ),
+                child: AutoSizeText(
+                  'Silahkan masukkan alamat surel anda untuk mereset kata sandi. Tautan konfirmasi akan dikirimkan ke alamat surel anda.',
+                  style: subh6.copyWith(
+                    color: bodySecondaryNormal,
+                  ),
+                ),
               ),
-            ),
+              SizedBox(
+                height: 60,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(
+                    Icons.event_note,
+                  ),
+                  hintText: 'Surel',
+                ),
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              Container(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Kirim'),
+                ),
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Belum Memiliki Akun ? ',
+                      style: bodyNormal.copyWith(
+                        color: bodySecondaryLight,
+                      ),
+                    ),
+                    Text(
+                      'Daftar Sekarang',
+                      style: bodyNormal.copyWith(
+                        color: primaryNormal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),

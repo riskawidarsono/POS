@@ -15,18 +15,72 @@ class RegisterPage extends StatelessWidget {
           titleBar: 'Daftar',
         ),
         body: Container(
-          child: Container(
-            padding: EdgeInsets.only(
-              top: 40,
-              left: 24,
-              right: 24,
-            ),
-            child: AutoSizeText(
-              'Silahkan isi formulir pendaftaran',
-              style: subh6.copyWith(
-                color: bodySecondaryNormal,
+          margin: EdgeInsets.symmetric(
+            horizontal: 24,
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                child: Container(
+                  padding: EdgeInsets.only(
+                    top: 40,
+                  ),
+                  child: Text(
+                    'Silahkan isi formulir pendaftaran',
+                    style: subh6.copyWith(
+                      color: bodySecondaryNormal,
+                    ),
+                  ),
+                ),
               ),
-            ),
+              SizedBox(
+                height: 60,
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 14,
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 14,
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 14,
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 60,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'Daftar',
+                ),
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Sudah Memiliki Akun ? ',
+                      style: bodyNormal.copyWith(
+                        color: bodySecondaryLight,
+                      ),
+                    ),
+                    Text(
+                      'Masuk Sekarang',
+                      style: bodyNormal.copyWith(
+                        color: primaryNormal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
